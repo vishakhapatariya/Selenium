@@ -38,5 +38,11 @@ public class Locators2 {
 	
 		// Validate name
 		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(), "Hello "+name+",");
+	
+		// Click Log Out Button by generating Xpath based on button text
+		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+				
+		// Closing the browser
+		driver.close();
 	}
 }
