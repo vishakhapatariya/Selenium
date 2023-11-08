@@ -1,3 +1,5 @@
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,13 +15,19 @@ public class Locators2 {
 		System.setProperty("webdriver.chrome.driver", "/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/chrome_driver/chromedriver-linux64/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		
+		// Resolve Synchronization Issue
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		// Getting password from Forgot password
+		String password = getPassword(driver);
+				
 		// Hit URL on browser
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		
 		// Enter Username
 		driver.findElement(By.id("inputUsername")).sendKeys(name);
 		// Enter Password
-		driver.findElement(By.name("inputPassword")).sendKeys("rahulshettyacademy");
+		driver.findElement(By.name("inputPassword")).sendKeys(password);
 		
 		// Click CheckBox
 		driver.findElement(By.cssSelector("#chkboxOne")).click();
@@ -44,5 +52,34 @@ public class Locators2 {
 				
 		// Closing the browser
 		driver.close();
+	}
+	
+	public static String getPassword(WebDriver driver) throws InterruptedException{
+		
+		// Hit URL on Browser
+		driver.get("https://rahulshettyacademy.com/locatorspractice/");
+		
+		// Click on Forgot password link
+		driver.findElement(By.linkText("Forgot your password?")).click();
+		Thread.sleep(1000);
+		
+		// Click on reset login button
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		Thread.sleep(1000);
+		
+		// Get password text
+		String passwordText = driver.findElement(By.cssSelector("form p")).getText();
+		
+		// Split password from text
+		String[] passArray = passwordText.split("'");
+		
+		// Method 1
+//		String[] passArray2 = passArray[1].split("'");
+//		System.out.print(passArray2[0]);
+		
+		// Method 2
+		String password = passArray[1].split("'")[0];
+		
+		return password;
 	}
 }
