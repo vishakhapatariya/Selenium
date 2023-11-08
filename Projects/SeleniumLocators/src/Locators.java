@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		// Invoke Chrome Browser
 		System.setProperty("webdriver.chrome.driver",
@@ -29,6 +29,9 @@ public class Locators {
 
 		// Click on the link using linkText Locator
 		driver.findElement(By.linkText("Forgot your password?")).click();
+		
+		// Waiting state
+		Thread.sleep(1000);
 
 		// Enter Name using Xpath Locator
 		driver.findElement(By.xpath("//input[@placeholder='Name']")).sendKeys("Vishakha");
@@ -50,5 +53,31 @@ public class Locators {
 
 		// Extract text from Browser using CSS Selector Locator
 		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+	
+		
+		
+		// Entering correct username and password to login successfully
+		
+		// Go to Login Page using customized Xpath with parent to child tags
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
+		
+		// Waiting state
+		Thread.sleep(1000);
+		
+		// Enter username using CSS Selector
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("Vishakha");
+		
+		// Enter password using CSS Selector Regular Expression 
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		
+		// Select CheckBox
+		driver.findElement(By.id("chkboxOne")).click();
+		driver.findElement(By.id("chkboxTwo")).click();
+		
+		// Click on Submit button
+		//driver.findElement(By.xpath("//Button[@class='submit signInBtn']")).click();
+		// Click on submit button using xpath Regular Expression
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+		
 	}
 }
