@@ -24,7 +24,9 @@ public class DynamicDropDown {
 
 		Thread.sleep(1000);
 		// Select item from 'To' DropDown
-		driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
+//		driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
 
+		// Parent-Child relationship locator to Identify the objects Uniquely
+		driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 	}
 }
