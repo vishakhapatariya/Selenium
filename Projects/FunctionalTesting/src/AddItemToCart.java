@@ -7,6 +7,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddItemToCart {
 
@@ -17,7 +19,10 @@ public class AddItemToCart {
 		WebDriver driver = new ChromeDriver();
 
 		// Implicit Wait
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		// Explicit Wait
+		WebDriverWait w = new WebDriverWait(driver, Duration.ofSeconds(5));
 		
 		// Hit URL on Browser
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
@@ -35,12 +40,14 @@ public class AddItemToCart {
 		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
 
 		// Enter promo code in EditBox
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input.promocode")));
 		driver.findElement(By.cssSelector("input.promocode")).sendKeys("rahulshettyacademy");
 		
 		// Click on 'Apply' Button
 		driver.findElement(By.cssSelector("button.promoBtn")).click();
 		
 		// Grab the text
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
 		
 	}
