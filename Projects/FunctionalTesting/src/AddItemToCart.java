@@ -1,5 +1,7 @@
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,6 +16,9 @@ public class AddItemToCart {
 		System.setProperty("webdriver.chrome.driver", "/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/chrome_driver/chromedriver-linux64/chromedriver");
 		WebDriver driver = new ChromeDriver();
 
+		// Implicit Wait
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
 		// Hit URL on Browser
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 		Thread.sleep(3000);
@@ -21,6 +26,28 @@ public class AddItemToCart {
 		// Creating Array of Items to be Added to Cart
 		String[] itemsNeeded = {"Cucumber","Brocolli","Beetroot","Carrot"};
 		
+		addItem(driver, itemsNeeded);
+		
+		// Click on Cart
+		driver.findElement(By.cssSelector("img[alt='Cart']")).click();
+		
+		// Click on 'PROCEED TO CHECKOUT' Button
+		driver.findElement(By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]")).click();
+
+		// Enter promo code in EditBox
+		driver.findElement(By.cssSelector("input.promocode")).sendKeys("rahulshettyacademy");
+		
+		// Click on 'Apply' Button
+		driver.findElement(By.cssSelector("button.promoBtn")).click();
+		
+		// Grab the text
+		System.out.println(driver.findElement(By.cssSelector("span.promoInfo")).getText());
+		
+	}
+	
+	
+	public static void addItem(WebDriver driver, String[] itemsNeeded) {
+				
 		// Convert Array into arrayList for easy search
 		List itemsNeededList = Arrays.asList(itemsNeeded);
 					
@@ -47,6 +74,6 @@ public class AddItemToCart {
 				}
 			}
 		}
-		
+				
 	}
 }
