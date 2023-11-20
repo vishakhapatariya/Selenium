@@ -2,10 +2,13 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class BrokenLinks {
 
@@ -17,16 +20,27 @@ public class BrokenLinks {
 	
 		// Hit URL on Browser
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		
+		
+		// Iterate over all links in the page to validate broken Links mechanism
+		List<WebElement> links = driver.findElements(By.cssSelector("li[class='gf-li'] a"));
+		for(WebElement link : links) {
+
+			// Get URL tied up to the link
+			String url = link.getAttribute("href");
 			
-		// Get URL tied up to the link
-		String url = driver.findElement(By.cssSelector("a[href*='brokenlink']")).getAttribute("href");
-				
-		// Open Connection method to identify status codes of the links
-		HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
-		conn.setRequestMethod("HEAD");
-		conn.connect();
-		int respCode = conn.getResponseCode();
-		System.out.println(respCode);
+			// Open Connection method to identify status codes of the links
+			HttpURLConnection conn = (HttpURLConnection) new URL(url).openConnection();
+			conn.setRequestMethod("HEAD");
+			conn.connect();
+			int respCode = conn.getResponseCode();
+			System.out.println(respCode);
+			if(respCode>400) {
+				System.out.println("The link with text "+link.getText()+" is broken with code "+respCode);
+				Assert.assertTrue(false);
+			}
+		
+		}
 		
 	}
 
