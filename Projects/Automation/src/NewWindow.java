@@ -47,10 +47,16 @@ public class NewWindow {
 		WebElement name = driver.findElement(By.cssSelector("[name='name']"));
 		name.sendKeys(courseName);
 		
+		
 		// Taking WebElement Partial Screenshot
 		File src = name.getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, new File("/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/Automation/src/partialScreenshot.png"));
 				
+		
+		// Get Height & Width of WebElement
+		System.out.println(name.getRect().getHeight());
+		System.out.println(name.getRect().getDimension().getWidth());
+		
 		// Close all the tabs
 		driver.quit();
 	}
