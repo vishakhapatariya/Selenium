@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-21T18:32:47 IST" name="Suite" finished-at="2023-11-21T18:32:47 IST" duration-ms="103">
+    <groups>
+    </groups>
+    <test started-at="2023-11-21T18:32:47 IST" name="Test" finished-at="2023-11-21T18:32:47 IST" duration-ms="35">
+      <class name="test.Demo2">
+        <test-method signature="test2()[pri:0, instance:test.Demo2@19d481b]" started-at="2023-11-21T18:32:47 IST" name="test2" finished-at="2023-11-21T18:32:47 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- test.Demo2 -->
+      <class name="test.Demo1">
+        <test-method signature="test1()[pri:0, instance:test.Demo1@1eb5174b]" started-at="2023-11-21T18:32:47 IST" name="test1" finished-at="2023-11-21T18:32:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2()[pri:0, instance:test.Demo1@1eb5174b]" started-at="2023-11-21T18:32:47 IST" name="test2" finished-at="2023-11-21T18:32:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- test.Demo1 -->
+    </test> <!-- Test -->
+    <test started-at="2023-11-21T18:32:47 IST" name="Car Loan" finished-at="2023-11-21T18:32:47 IST" duration-ms="6">
+      <class name="test.Demo3">
+        <test-method signature="loginAPICarLoan()[pri:0, instance:test.Demo3@7e5afaa6]" started-at="2023-11-21T18:32:47 IST" name="loginAPICarLoan" finished-at="2023-11-21T18:32:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPICarLoan -->
+        <test-method signature="mobileLoginCarLoan()[pri:0, instance:test.Demo3@7e5afaa6]" started-at="2023-11-21T18:32:47 IST" name="mobileLoginCarLoan" finished-at="2023-11-21T18:32:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileLoginCarLoan -->
+        <test-method signature="webLoginCarLoan()[pri:0, instance:test.Demo3@7e5afaa6]" started-at="2023-11-21T18:32:47 IST" name="webLoginCarLoan" finished-at="2023-11-21T18:32:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLoginCarLoan -->
+      </class> <!-- test.Demo3 -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Suite -->
+</testng-results>
