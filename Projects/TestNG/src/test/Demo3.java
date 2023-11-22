@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class Demo3 {
 	
-	@Test
+	@Test(dependsOnMethods= {"loginAPICarLoan","xsignInAPICarLoan"})
 	public void webLoginCarLoan()
 	{
 		// Selenium
@@ -19,14 +19,14 @@ public class Demo3 {
 		System.out.println("Web sign in car");
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void webSignOutCarLoan()
 	{
 		// Selenium
 		System.out.println("Web sign out car");
 	}
 	
-	@Test
+	@Test(timeOut=4000)
 	public void mobileLoginCarLoan()
 	{
 		// Appium
@@ -43,6 +43,13 @@ public class Demo3 {
 	{
 		// Rest API Automation
 		System.out.println("LoginAPIcar");
+	}
+	
+	@Test
+	public void xsignInAPICarLoan()
+	{
+		// Rest API Automation
+		System.out.println("xsignInAPIcar");
 	}
 
 }
