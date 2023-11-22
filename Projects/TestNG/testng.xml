@@ -17,6 +17,7 @@
 		  <class name="test.Demo3">
 			  <methods>
 				  <exclude name="mobileLoginCarLoan"></exclude>
+				  <exclude name="web.*"></exclude>
 			  </methods>
 		  </class>
 		  <class name="test.Demo4">

@@ -12,6 +12,20 @@ public class Demo3 {
 	}
 	
 	@Test
+	public void webSignInCarLoan()
+	{
+		// Selenium
+		System.out.println("Web sign in car");
+	}
+	
+	@Test
+	public void webSignOutCarLoan()
+	{
+		// Selenium
+		System.out.println("Web sign out car");
+	}
+	
+	@Test
 	public void mobileLoginCarLoan()
 	{
 		// Appium
