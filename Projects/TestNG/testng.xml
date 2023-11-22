@@ -4,13 +4,26 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="test.Demo2"/>
-      <class name="test.Demo1"/>
+      <class name="test.Demo1"> 
+		  <methods>
+			  <include name="test1"></include>
+		  </methods>
+	  </class> 
     </classes>
   </test> <!-- Test -->
   
   <test name="Car Loan">
 	  <classes>
-		  <class name="test.Demo3"></class>
+		  <class name="test.Demo3">
+			  <methods>
+				  <exclude name="mobileLoginCarLoan"></exclude>
+			  </methods>
+		  </class>
+		  <class name="test.Demo4">
+			  <methods>
+				  <include name="loginAPIHomeLoan"></include>
+			  </methods>
+		  </class>
 	  </classes>
   </test>
 </suite> <!-- Suite -->
