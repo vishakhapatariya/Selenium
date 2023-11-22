@@ -1,15 +1,18 @@
 package test;
 
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Demo3 {
 	
+	@Parameters({"URL"})
 	@Test(dependsOnMethods= {"loginAPICarLoan","xsignInAPICarLoan"})
-	public void webLoginCarLoan()
+	public void webLoginCarLoan(String urlName)
 	{
 		// Selenium
 		System.out.println("Weblogincar");
+		System.out.println(urlName);
 	}
 	
 	@Test(groups= {"smoke"})

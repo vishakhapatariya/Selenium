@@ -3,6 +3,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Demo1 {
@@ -17,10 +18,13 @@ public class Demo1 {
 		System.out.println("Before Class");
 	}
 	
+	@Parameters({"URL","APIKey/Username"})
 	@Test
-	public void test1()
+	public void test1(String urlName,String username)
 	{
 		System.out.println("Hello");
+		System.out.println(urlName);
+		System.out.println(username);
 	}
 	
 	@BeforeTest
