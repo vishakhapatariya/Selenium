@@ -11,7 +11,7 @@ public class Demo4 {
 		System.out.println("Webloginhome");
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void mobileLoginHomeLoan()
 	{
 		// Appium
