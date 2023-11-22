@@ -12,7 +12,7 @@ public class Demo3 {
 		System.out.println("Weblogincar");
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void webSignInCarLoan()
 	{
 		// Selenium

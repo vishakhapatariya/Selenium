@@ -12,7 +12,7 @@ public class Demo2 {
 		System.out.println("After Class");
 	}
 	
-	@Test
+	@Test(groups= {"smoke"})
 	public void test2()
 	{
 		System.out.println("Good Morning!");
