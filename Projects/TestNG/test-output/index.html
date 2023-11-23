@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.Demo2" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,11 +133,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.Demo2" class="method navigator-link" hash-for-method="test2">test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.Demo3" class="method navigator-link" hash-for-method="webLoginCarLoan(google.com)">webLoginCarLoan(google.com)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -134,17 +143,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.Demo3" class="method navigator-link" hash-for-method="xsignInAPICarLoan(thirdusername, thirdpassword)">xsignInAPICarLoan(thirdusername, thirdpassword)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.Demo3" class="method navigator-link" hash-for-method="xsignInAPICarLoan(secondusername, secondpassword)">xsignInAPICarLoan(secondusername, secondpassword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="test.Demo3" class="method navigator-link" hash-for-method="xsignInAPICarLoan(firstusername, firstpassword)">xsignInAPICarLoan(firstusername, firstpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.Demo3" class="method navigator-link" hash-for-method="xsignInAPICarLoan(thirdusername, thirdpassword)">xsignInAPICarLoan(thirdusername, thirdpassword)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -159,63 +168,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.Demo3</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginAPICarLoan">
-                  </a> <!-- loginAPICarLoan -->
-                  <span class="method-name">loginAPICarLoan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="webLoginCarLoan(google.com)">
-                  </a> <!-- webLoginCarLoan(google.com) -->
-                  <span class="method-name">webLoginCarLoan</span>
-                  <span class="parameters">(google.com)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="webSignInCarLoan">
-                  </a> <!-- webSignInCarLoan -->
-                  <span class="method-name">webSignInCarLoan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="xsignInAPICarLoan(thirdusername, thirdpassword)">
-                  </a> <!-- xsignInAPICarLoan(thirdusername, thirdpassword) -->
-                  <span class="method-name">xsignInAPICarLoan</span>
-                  <span class="parameters">(thirdusername, thirdpassword)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="xsignInAPICarLoan(secondusername, secondpassword)">
-                  </a> <!-- xsignInAPICarLoan(secondusername, secondpassword) -->
-                  <span class="method-name">xsignInAPICarLoan</span>
-                  <span class="parameters">(secondusername, secondpassword)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="xsignInAPICarLoan(firstusername, firstpassword)">
-                  </a> <!-- xsignInAPICarLoan(firstusername, firstpassword) -->
-                  <span class="method-name">xsignInAPICarLoan</span>
-                  <span class="parameters">(firstusername, firstpassword)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">test.Demo2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -224,10 +179,15 @@
                   <a name="test2">
                   </a> <!-- test2 -->
                   <span class="method-name">test2</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.Demo2.test2(Demo2.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -259,6 +219,60 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Demo3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginAPICarLoan">
+                  </a> <!-- loginAPICarLoan -->
+                  <span class="method-name">loginAPICarLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="webLoginCarLoan(google.com)">
+                  </a> <!-- webLoginCarLoan(google.com) -->
+                  <span class="method-name">webLoginCarLoan</span>
+                  <span class="parameters">(google.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="webSignInCarLoan">
+                  </a> <!-- webSignInCarLoan -->
+                  <span class="method-name">webSignInCarLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xsignInAPICarLoan(secondusername, secondpassword)">
+                  </a> <!-- xsignInAPICarLoan(secondusername, secondpassword) -->
+                  <span class="method-name">xsignInAPICarLoan</span>
+                  <span class="parameters">(secondusername, secondpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xsignInAPICarLoan(firstusername, firstpassword)">
+                  </a> <!-- xsignInAPICarLoan(firstusername, firstpassword) -->
+                  <span class="method-name">xsignInAPICarLoan</span>
+                  <span class="parameters">(firstusername, firstpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="xsignInAPICarLoan(thirdusername, thirdpassword)">
+                  </a> <!-- xsignInAPICarLoan(thirdusername, thirdpassword) -->
+                  <span class="method-name">xsignInAPICarLoan</span>
+                  <span class="parameters">(thirdusername, thirdpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -270,6 +284,9 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;URL&quot; value=&quot;google.com&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;APIKey/Username&quot; value=&quot;123456&quot;/&gt;
     &lt;parameter name=&quot;URL&quot; value=&quot;gmail.com&quot;/&gt;
@@ -352,13 +369,13 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test2')
 data.setCell(0, 2, 'test.Demo2')
-data.setCell(0, 3, 3);
+data.setCell(0, 3, 7);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test1')
 data.setCell(1, 2, 'test.Demo1')
 data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginAPICarLoan')
+data.setCell(2, 1, 'webSignInCarLoan')
 data.setCell(2, 2, 'test.Demo3')
 data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
@@ -370,26 +387,26 @@ data.setCell(4, 1, 'webLoginCarLoan')
 data.setCell(4, 2, 'test.Demo3')
 data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'xsignInAPICarLoan')
-data.setCell(5, 2, 'test.Demo3')
+data.setCell(5, 1, 'loginAPIHomeLoan')
+data.setCell(5, 2, 'test.Demo4')
 data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'webSignInCarLoan')
+data.setCell(6, 1, 'xsignInAPICarLoan')
 data.setCell(6, 2, 'test.Demo3')
 data.setCell(6, 3, 1);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginAPIHomeLoan')
-data.setCell(7, 2, 'test.Demo4')
-data.setCell(7, 3, 1);
+data.setCell(7, 1, 'loginAPICarLoan')
+data.setCell(7, 2, 'test.Demo3')
+data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'xsignInAPICarLoan')
 data.setCell(8, 2, 'test.Demo3')
-data.setCell(8, 3, 1);
+data.setCell(8, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 ms</span>
+              <span class="suite-total-time">Total running time: 13 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -408,15 +425,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Demo3</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">mobileLoginCarLoan</span>
-                <br/>
-                <span class="ignored-method-name">webSignOutCarLoan</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
               <span class="ignored-class-name">test.Demo1</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">test2</span>
@@ -429,6 +437,15 @@ return data;
                 <span class="ignored-method-name">mobileLoginHomeLoan</span>
                 <br/>
                 <span class="ignored-method-name">webLoginHomeLoan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.Demo3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">mobileLoginCarLoan</span>
+                <br/>
+                <span class="ignored-method-name">webSignOutCarLoan</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -450,85 +467,87 @@ return data;
               <div class="chronological-class-name">test.Demo1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">firstExecution</span>
-                <span class="method-start">8 ms</span>
+                <span class="method-start">9 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo2</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test2</span>
                 <span class="method-start">26 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterEveryMethod</span>
-                <span class="method-start">32 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">34 ms</span>
+                <span class="method-start">39 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">35 ms</span>
+                <span class="method-start">41 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeEveryMethod</span>
-                <span class="method-start">36 ms</span>
+                <span class="method-start">42 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">test1(gmail.com, 123456)</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-start">43 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">lastExecution</span>
-                <span class="method-start">39 ms</span>
+                <span class="method-start">45 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo3</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginAPICarLoan</span>
-                <span class="method-start">103 ms</span>
+                <span class="method-start">123 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">webSignInCarLoan</span>
-                <span class="method-start">106 ms</span>
+                <span class="method-start">125 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">xsignInAPICarLoan(firstusername, firstpassword)</span>
-                <span class="method-start">110 ms</span>
+                <span class="method-start">128 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">xsignInAPICarLoan(secondusername, secondpassword)</span>
-                <span class="method-start">112 ms</span>
+                <span class="method-start">130 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">xsignInAPICarLoan(thirdusername, thirdpassword)</span>
-                <span class="method-start">114 ms</span>
+                <span class="method-start">131 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">webLoginCarLoan(google.com)</span>
-                <span class="method-start">119 ms</span>
+                <span class="method-start">135 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo4</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginAPIHomeLoan</span>
-                <span class="method-start">121 ms</span>
+                <span class="method-start">137 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">test.Demo1</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">142 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
