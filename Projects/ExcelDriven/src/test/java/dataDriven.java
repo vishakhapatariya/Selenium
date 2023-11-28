@@ -61,7 +61,7 @@ public class dataDriven {
 						while (cv.hasNext()) {
 							Cell c = cv.next();
 							if(c.getCellType()==CellType.STRING) {
-								a.add(cv.next().getStringCellValue());
+								a.add(c.getStringCellValue());
 							}else {
 								a.add(NumberToTextConverter.toText(c.getNumericCellValue()));
 							}
