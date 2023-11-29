@@ -9,7 +9,7 @@ import pageObject.HomePageObject;
 import pageObject.loginPageObject;
 import resources.base;
 
-public class HomePage extends base{
+public class ValidateUserLogin extends base{
 	
 	@Test(dataProvider="getData")
 	public void basePageNavigation(String username, String password, String text) throws IOException {
@@ -18,7 +18,7 @@ public class HomePage extends base{
 		
 		// Click on Login Page link - HomePageObject
 		HomePageObject homepage = new HomePageObject(driver);
-		homepage.loginLink().click();
+		homepage.getloginLink().click();
 		
 		// Enter details and click on submit - loginPageObject
 		loginPageObject loginpage = new loginPageObject(driver);

@@ -13,9 +13,16 @@ public class HomePageObject {
 	}
 	
 	By login = By.cssSelector("a[href*='sign_in']");
+	By title = By.xpath("//div[@class='pull-left']/h2");
 	
-	public WebElement loginLink() {
+	
+	public WebElement getloginLink() {
 		return driver.findElement(login);
 	}
+	
+	public WebElement getTitle() {
+		return driver.findElement(title);
+	}
+
 
 }

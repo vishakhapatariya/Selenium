@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Selenium.E2EProject.HomePage">
+      <class name="Selenium.E2EProject.validateTitle">
         <methods>
-          <include name="basePageNavigation"/>
+          <include name="validTitle"/>
         </methods>
-      </class> <!-- Selenium.E2EProject.HomePage -->
+      </class> <!-- Selenium.E2EProject.validateTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
