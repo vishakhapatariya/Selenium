@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class HomePageObjectModel {
+public class HomePageObject {
 	
 	public WebDriver driver;
 	
-	public HomePageObjectModel(WebDriver driver) {
+	public HomePageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 	
