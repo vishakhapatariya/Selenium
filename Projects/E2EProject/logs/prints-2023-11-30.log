@@ -1,6 +1,5 @@
-14:27:22.101 [main] INFO  Selenium.E2EProject.ValidateNavigationbar - Driver is initialized
-14:27:24.142 [main] INFO  Selenium.E2EProject.ValidateNavigationbar - Navigated to homepage
-14:27:24.747 [main] INFO  Selenium.E2EProject.ValidateTitleHome - Driver is initialized
-14:27:26.759 [main] INFO  Selenium.E2EProject.ValidateTitleHome - Navigated to homepage
-14:27:27.371 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
-14:27:28.980 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
+15:00:59.152 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Navigated to homepage
+15:00:59.221 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Successfully validated title
+15:00:59.265 [TestNG-tests-2] INFO  Selenium.E2EProject.ValidateNavigationbar - Navigated to homepage
+15:00:59.349 [TestNG-tests-2] INFO  Selenium.E2EProject.ValidateNavigationbar - Navbar is displayed Successfully
+15:01:00.246 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage

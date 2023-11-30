@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Validating Login Functionality(failed)">
+    <classes>
+      <class name="Selenium.E2EProject.ValidateUserLogin">
+        <methods>
+          <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="1"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
+    </classes>
+  </test> <!-- Validating Login Functionality(failed) -->
+  <test thread-count="5" name="Validating Navigationbar in HomePage(failed)">
+    <classes>
+      <class name="Selenium.E2EProject.ValidateNavigationbar">
+        <methods>
+          <include name="validNavbar"/>
+          <include name="initialize"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
+    </classes>
+  </test> <!-- Validating Navigationbar in HomePage(failed) -->
+  <test thread-count="5" name="Validating title in HomePage(failed)">
     <classes>
       <class name="Selenium.E2EProject.ValidateTitleHome">
         <methods>
@@ -11,5 +33,5 @@
         </methods>
       </class> <!-- Selenium.E2EProject.ValidateTitleHome -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Validating title in HomePage(failed) -->
 </suite> <!-- Failed suite [Suite] -->
