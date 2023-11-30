@@ -3,20 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Selenium.E2EProject.ValidateNavigationbar">
-        <methods>
-          <include name="initialize"/>
-          <include name="validNavbar"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
-      <class name="Selenium.E2EProject.ValidateUserLogin">
-        <methods>
-          <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="0 1"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
       <class name="Selenium.E2EProject.ValidateTitleHome">
         <methods>
           <include name="validTitle"/>

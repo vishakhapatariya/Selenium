@@ -4,6 +4,8 @@ package Selenium.E2EProject;
 import java.io.IOException;
 
 import org.testng.annotations.BeforeMethod;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
@@ -14,11 +16,15 @@ import resources.base;
 
 public class ValidateUserLogin extends base{
 	
+	private static Logger log = LogManager.getLogger(ValidateUserLogin.class.getName());
+	
 	@BeforeMethod
 	public void initialize() throws IOException {
 		driver=initializeDriver();
+		log.info("Driver is initialized");
 		
 		driver.get(prop.getProperty("url"));
+		log.info("Navigated to homepage");
 	}
 	
 	@Test(dataProvider="getData")
@@ -32,8 +38,9 @@ public class ValidateUserLogin extends base{
 		loginPageObject loginpage = new loginPageObject(driver);
 		loginpage.getEmail().sendKeys(username);
 		loginpage.getPassword().sendKeys(password);
-		System.out.println(text);
+		// System.out.println(text);
 		loginpage.getSubmitbtn().click();
+		log.info(text+" user is logging.");
 		
 	}
 	

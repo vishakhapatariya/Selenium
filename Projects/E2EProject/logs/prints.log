@@ -1,0 +1,6 @@
+14:27:33.522 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Restricted User user is logging.
+14:27:33.978 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
+14:27:35.927 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
+14:27:41.213 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
+14:27:41.328 [main] INFO  Selenium.E2EProject.ValidateNavigationbar - Navbar is displayed Successfully
+14:27:41.353 [main] INFO  Selenium.E2EProject.ValidateTitleHome - Successfully validated title
