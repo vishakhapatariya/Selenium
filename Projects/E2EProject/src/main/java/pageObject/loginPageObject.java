@@ -11,6 +11,7 @@ public class loginPageObject {
 	By emailText = By.id("email");
 	By passText = By.id("password");
 	By submitButton = By.name("commit");
+	By forgotPass = By.cssSelector("a[href*='forgot']");
 	
 	public loginPageObject(WebDriver driver) {
 		this .driver = driver;
@@ -27,6 +28,11 @@ public class loginPageObject {
 	
 	public WebElement getSubmitbtn() {
 		return driver.findElement(submitButton);
+	}
+	
+	public ForgotPassPageObject getForgotPass() {
+		driver.findElement(forgotPass).click();
+		return new ForgotPassPageObject(driver);
 	}
 
 }

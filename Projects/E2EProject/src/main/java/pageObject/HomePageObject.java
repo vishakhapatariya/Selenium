@@ -18,8 +18,10 @@ public class HomePageObject {
 	By navbar = By.cssSelector("[class='main-menu']");
 	
 	
-	public WebElement getloginLink() {
-		return driver.findElement(login);
+	public loginPageObject getlogin() {
+		driver.findElement(login).click();
+		loginPageObject loginpage = new loginPageObject(driver);
+		return loginpage;
 	}
 	
 	public WebElement getTitle() {
