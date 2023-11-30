@@ -1,4 +1,2 @@
-18:38:10.456 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Restricted User user is logging.
-18:38:12.085 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
-18:38:13.822 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
-18:38:18.503 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
+19:40:43.275 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
+19:40:48.663 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
