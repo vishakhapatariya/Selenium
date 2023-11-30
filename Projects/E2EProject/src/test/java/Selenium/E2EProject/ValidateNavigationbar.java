@@ -1,26 +1,23 @@
 package Selenium.E2EProject;
 
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 import java.io.IOException;
-import java.util.Base64;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
 
 import pageObject.HomePageObject;
 import resources.base;
 
-public class ValidateTitleHome extends base{
+public class ValidateNavigationbar extends base{
 	
 	public WebDriver driver;
-	private static Logger log = LogManager.getLogger(ValidateTitleHome.class.getName());
-
+	private static Logger log = LogManager.getLogger(ValidateNavigationbar.class.getName());
+	
 	@BeforeTest
 	public void initialize() throws IOException {
 		driver=initializeDriver();
@@ -31,18 +28,19 @@ public class ValidateTitleHome extends base{
 	}
 	
 	@Test
-	public void validTitle() throws IOException {
-	
-		// Compare the text from the browser with actual text
+	public void validNavbar() {
+		
 		HomePageObject homepage = new HomePageObject(driver);
 		
-		AssertJUnit.assertEquals(homepage.getTitle().getText(), "Featured Courses123");
+		AssertJUnit.assertTrue(homepage.getNavbar().isDisplayed());
 		
-		log.info("Successfully validated title");
+		log.info("Navbar is displayed Successfully");
+		
 	}
 	
 	@AfterTest
 	public void tearDown() {
 		driver.close();
 	}
+
 }

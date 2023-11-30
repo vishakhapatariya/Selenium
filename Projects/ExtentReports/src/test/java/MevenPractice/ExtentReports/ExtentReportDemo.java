@@ -15,7 +15,7 @@ public class ExtentReportDemo {
 	
 	@BeforeTest
 	public void config() {
-		// EctentReports, ExtentSparkReporter
+		// ExtentReports, ExtentSparkReporter
 		
 		String path = System.getProperty("user.dir")+"/reports/index.html";
 		//String path = "/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/ExtentReports/reports/index.html";
