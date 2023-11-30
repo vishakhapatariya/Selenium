@@ -1,17 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T11:09:23 IST" name="Default suite" finished-at="2023-11-30T11:09:27 IST" duration-ms="3691">
+  <suite started-at="2023-11-30T11:38:52 IST" name="Suite" finished-at="2023-11-30T11:39:29 IST" duration-ms="37325">
     <groups>
     </groups>
-    <test started-at="2023-11-30T11:09:23 IST" name="Default test" finished-at="2023-11-30T11:09:27 IST" duration-ms="3691">
+    <test started-at="2023-11-30T11:38:52 IST" name="Test" finished-at="2023-11-30T11:39:29 IST" duration-ms="37325">
       <class name="Selenium.E2EProject.ValidateNavigationbar">
-        <test-method signature="validNavbar()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@593aaf41]" started-at="2023-11-30T11:09:23 IST" name="validNavbar" finished-at="2023-11-30T11:09:27 IST" duration-ms="3647" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@1e0b4072]" started-at="2023-11-30T11:38:52 IST" name="initialize" finished-at="2023-11-30T11:39:01 IST" duration-ms="8718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validNavbar()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@1e0b4072]" started-at="2023-11-30T11:39:29 IST" name="validNavbar" finished-at="2023-11-30T11:39:29 IST" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validNavbar -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@1e0b4072]" started-at="2023-11-30T11:39:29 IST" name="tearDown" finished-at="2023-11-30T11:39:29 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Selenium.E2EProject.ValidateTitleHome">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@791f145a]" started-at="2023-11-30T11:39:01 IST" name="initialize" finished-at="2023-11-30T11:39:05 IST" duration-ms="4532" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="validTitle()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@791f145a]" started-at="2023-11-30T11:39:29 IST" name="validTitle" finished-at="2023-11-30T11:39:29 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@791f145a]" started-at="2023-11-30T11:39:29 IST" name="tearDown" finished-at="2023-11-30T11:39:29 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium.E2EProject.ValidateTitleHome -->
+      <class name="Selenium.E2EProject.ValidateUserLogin">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:05 IST" name="initialize" finished-at="2023-11-30T11:39:09 IST" duration-ms="3620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:09 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T11:39:14 IST" duration-ms="4987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:14 IST" name="tearDown" finished-at="2023-11-30T11:39:14 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:14 IST" name="initialize" finished-at="2023-11-30T11:39:21 IST" duration-ms="7439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:21 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T11:39:29 IST" duration-ms="7375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restricted User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@54a7079e]" started-at="2023-11-30T11:39:29 IST" name="tearDown" finished-at="2023-11-30T11:39:29 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

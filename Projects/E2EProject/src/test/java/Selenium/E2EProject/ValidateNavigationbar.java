@@ -1,25 +1,36 @@
 package Selenium.E2EProject;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
-import org.junit.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import pageObject.HomePageObject;
 import resources.base;
 
 public class ValidateNavigationbar extends base{
 	
-	@Test
-	public void validNavbar() throws IOException {
+	@BeforeTest
+	public void initialize() throws IOException {
 		driver=initializeDriver();
 		
 		driver.get(prop.getProperty("url"));
+	}
+	
+	@Test
+	public void validNavbar() {
 		
 		HomePageObject homepage = new HomePageObject(driver);
 		
-		Assert.assertTrue(homepage.getNavbar().isDisplayed());
+		AssertJUnit.assertTrue(homepage.getNavbar().isDisplayed());
 		
+	}
+	
+	@AfterTest
+	public void tearDown() {
+		driver.close();
 	}
 
 }

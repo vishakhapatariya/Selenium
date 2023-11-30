@@ -1,9 +1,12 @@
 package Selenium.E2EProject;
 
+
 import java.io.IOException;
 
-import org.testng.annotations.DataProvider;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
 
 import pageObject.HomePageObject;
 import pageObject.loginPageObject;
@@ -11,10 +14,15 @@ import resources.base;
 
 public class ValidateUserLogin extends base{
 	
+	@BeforeMethod
+	public void initialize() throws IOException {
+		driver=initializeDriver();
+		
+		driver.get(prop.getProperty("url"));
+	}
+	
 	@Test(dataProvider="getData")
 	public void basePageNavigation(String username, String password, String text) throws IOException {
-		driver=initializeDriver();
-		driver.get(prop.getProperty("url"));
 		
 		// Click on Login Page link - HomePageObject
 		HomePageObject homepage = new HomePageObject(driver);
@@ -47,5 +55,10 @@ public class ValidateUserLogin extends base{
 		data[1][2] = "Non Restricted User";
 		
 		return data;
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
 	}
 }
