@@ -35,7 +35,7 @@ public class ValidateTitleHome extends base{
 		// Compare the text from the browser with actual text
 		HomePageObject homepage = new HomePageObject(driver);
 		
-		AssertJUnit.assertEquals(homepage.getTitle().getText(), "Featured Courses");
+		AssertJUnit.assertEquals(homepage.getTitle().getText(), "Featured Courses123");
 		
 		log.info("Successfully validated title");
 	}

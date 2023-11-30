@@ -1,49 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-30T15:00:55 IST" name="Suite" finished-at="2023-11-30T15:01:12 IST" duration-ms="17484">
+  <suite started-at="2023-11-30T15:57:23 IST" name="Suite" finished-at="2023-11-30T15:57:37 IST" duration-ms="13402">
     <groups>
     </groups>
-    <test started-at="2023-11-30T15:00:55 IST" name="Validating title in HomePage" finished-at="2023-11-30T15:00:59 IST" duration-ms="3919">
+    <test started-at="2023-11-30T15:57:23 IST" name="Validating title in HomePage" finished-at="2023-11-30T15:57:27 IST" duration-ms="3980">
       <class name="Selenium.E2EProject.ValidateTitleHome">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@5f59185e]" started-at="2023-11-30T15:00:55 IST" name="initialize" finished-at="2023-11-30T15:00:59 IST" duration-ms="3706" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@35beb15e]" started-at="2023-11-30T15:57:23 IST" name="initialize" finished-at="2023-11-30T15:57:27 IST" duration-ms="3488" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validTitle()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@5f59185e]" started-at="2023-11-30T15:00:59 IST" name="validTitle" finished-at="2023-11-30T15:00:59 IST" duration-ms="61" status="PASS">
+        <test-method signature="validTitle()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@35beb15e]" started-at="2023-11-30T15:57:27 IST" name="validTitle" finished-at="2023-11-30T15:57:27 IST" duration-ms="64" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Featured Courses> but was:<Featured Courses123>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Featured Courses> but was:<Featured Courses123>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at Selenium.E2EProject.ValidateTitleHome.validTitle(ValidateTitleHome.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@5f59185e]" started-at="2023-11-30T15:00:59 IST" name="tearDown" finished-at="2023-11-30T15:00:59 IST" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@35beb15e]" started-at="2023-11-30T15:57:27 IST" name="tearDown" finished-at="2023-11-30T15:57:27 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Selenium.E2EProject.ValidateTitleHome -->
     </test> <!-- Validating title in HomePage -->
-    <test started-at="2023-11-30T15:00:55 IST" name="Validating Navigationbar in HomePage" finished-at="2023-11-30T15:00:59 IST" duration-ms="4032">
+    <test started-at="2023-11-30T15:57:23 IST" name="Validating Navigationbar in HomePage" finished-at="2023-11-30T15:57:27 IST" duration-ms="4047">
       <class name="Selenium.E2EProject.ValidateNavigationbar">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@3624da92]" started-at="2023-11-30T15:00:55 IST" name="initialize" finished-at="2023-11-30T15:00:59 IST" duration-ms="3815" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@2289aca5]" started-at="2023-11-30T15:57:23 IST" name="initialize" finished-at="2023-11-30T15:57:27 IST" duration-ms="3765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="validNavbar()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@3624da92]" started-at="2023-11-30T15:00:59 IST" name="validNavbar" finished-at="2023-11-30T15:00:59 IST" duration-ms="83" status="PASS">
+        <test-method signature="validNavbar()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@2289aca5]" started-at="2023-11-30T15:57:27 IST" name="validNavbar" finished-at="2023-11-30T15:57:27 IST" duration-ms="152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validNavbar -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@3624da92]" started-at="2023-11-30T15:00:59 IST" name="tearDown" finished-at="2023-11-30T15:00:59 IST" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateNavigationbar@2289aca5]" started-at="2023-11-30T15:57:27 IST" name="tearDown" finished-at="2023-11-30T15:57:27 IST" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
     </test> <!-- Validating Navigationbar in HomePage -->
-    <test started-at="2023-11-30T15:00:55 IST" name="Validating Login Functionality" finished-at="2023-11-30T15:01:12 IST" duration-ms="17484">
+    <test started-at="2023-11-30T15:57:23 IST" name="Validating Login Functionality" finished-at="2023-11-30T15:57:37 IST" duration-ms="13400">
       <class name="Selenium.E2EProject.ValidateUserLogin">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:00:55 IST" name="initialize" finished-at="2023-11-30T15:01:00 IST" duration-ms="4780" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:23 IST" name="initialize" finished-at="2023-11-30T15:57:27 IST" duration-ms="3809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:01:00 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T15:01:04 IST" duration-ms="3991" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:27 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T15:57:31 IST" duration-ms="3675" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,15 +98,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:01:04 IST" name="tearDown" finished-at="2023-11-30T15:01:04 IST" duration-ms="83" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:31 IST" name="tearDown" finished-at="2023-11-30T15:57:31 IST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:01:04 IST" name="initialize" finished-at="2023-11-30T15:01:08 IST" duration-ms="4072" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:31 IST" name="initialize" finished-at="2023-11-30T15:57:33 IST" duration-ms="1982" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:01:08 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T15:01:12 IST" duration-ms="4442" status="PASS">
+        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:33 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-11-30T15:57:37 IST" duration-ms="3731" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +127,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@6256ac4f]" started-at="2023-11-30T15:01:12 IST" name="tearDown" finished-at="2023-11-30T15:01:12 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@297ea53a]" started-at="2023-11-30T15:57:37 IST" name="tearDown" finished-at="2023-11-30T15:57:37 IST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
