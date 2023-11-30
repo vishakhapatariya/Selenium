@@ -7,7 +7,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.AssertJUnit;
 import java.io.IOException;
-import java.util.Base64;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -36,7 +35,7 @@ public class ValidateTitleHome extends base{
 		// Compare the text from the browser with actual text
 		HomePageObject homepage = new HomePageObject(driver);
 		
-		AssertJUnit.assertEquals(homepage.getTitle().getText(), "Featured Courses123");
+		AssertJUnit.assertEquals(homepage.getTitle().getText(), "Featured Courses");
 		
 		log.info("Successfully validated title");
 	}
