@@ -14,7 +14,7 @@ public class ValidateTitleHome extends base{
 	public void validTitle() throws IOException {
 		driver = initializeDriver();
 		
-		driver.get("https://rahulshettyacademy.com/");
+		driver.get(prop.getProperty("url"));
 		
 		// Compare the text from the browser with actual text
 		HomePageObject homepage = new HomePageObject(driver);

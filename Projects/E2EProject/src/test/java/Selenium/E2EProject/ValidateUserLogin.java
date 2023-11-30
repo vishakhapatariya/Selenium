@@ -14,7 +14,7 @@ public class ValidateUserLogin extends base{
 	@Test(dataProvider="getData")
 	public void basePageNavigation(String username, String password, String text) throws IOException {
 		driver=initializeDriver();
-		driver.get("https://rahulshettyacademy.com/");
+		driver.get(prop.getProperty("url"));
 		
 		// Click on Login Page link - HomePageObject
 		HomePageObject homepage = new HomePageObject(driver);

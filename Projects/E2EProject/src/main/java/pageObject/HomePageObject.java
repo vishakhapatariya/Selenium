@@ -15,6 +15,8 @@ public class HomePageObject {
 	By login = By.cssSelector("a[href*='sign_in']");
 	By title = By.xpath("//div[@class='pull-left']/h2");
 	
+	By navbar = By.cssSelector("[class='main-menu']");
+	
 	
 	public WebElement getloginLink() {
 		return driver.findElement(login);
@@ -24,5 +26,8 @@ public class HomePageObject {
 		return driver.findElement(title);
 	}
 
+	public WebElement getNavbar() {
+		return driver.findElement(navbar);
+	}
 
 }
