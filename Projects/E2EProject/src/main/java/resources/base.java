@@ -20,7 +20,7 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 	
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 
 		prop.load(fis);
 		
@@ -29,8 +29,9 @@ public class base {
 //		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")) {
-			// Invoke chrome browser
-			System.setProperty("webdriver.chrome.driver", "/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/chrome_driver/chromedriver-linux64/chromedriver");
+			// Invoke chrome browser                   
+			
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chome_driver/chromedriver-linux64/chromedriver");
 			driver = new ChromeDriver();
 		}
 		else if(browserName.equals("firefox")) {
