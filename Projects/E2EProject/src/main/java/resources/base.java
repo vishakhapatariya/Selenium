@@ -23,7 +23,10 @@ public class base {
 		FileInputStream fis = new FileInputStream("/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/src/main/java/resources/data.properties");
 
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		
+		// mvn test -Dbrowser=chrome
+		String browserName = System.getProperty("browser");
+//		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")) {
 			// Invoke chrome browser

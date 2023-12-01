@@ -6,7 +6,7 @@
       <class name="Selenium.E2EProject.ValidateUserLogin">
         <methods>
           <include name="initialize"/>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Selenium.E2EProject.ValidateUserLogin -->

@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="Selenium.E2EProject.Listeners"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Validating title in HomePage(failed)">
+  <test thread-count="5" parallel="tests" name="Validating Login Functionality(failed)">
     <classes>
-      <class name="Selenium.E2EProject.ValidateTitleHome">
+      <class name="Selenium.E2EProject.ValidateUserLogin">
         <methods>
-          <include name="validTitle"/>
           <include name="initialize"/>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Selenium.E2EProject.ValidateTitleHome -->
+      </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
     </classes>
-  </test> <!-- Validating title in HomePage(failed) -->
+  </test> <!-- Validating Login Functionality(failed) -->
 </suite> <!-- Failed suite [Suite] -->

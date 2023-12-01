@@ -8,7 +8,7 @@ public class loginPageObject {
 	
 	WebDriver driver;
 	
-	By emailText = By.id("email");
+	By emailText = By.xpath("//input[@name='email']");
 	By passText = By.id("password");
 	By submitButton = By.name("commit");
 	By forgotPass = By.cssSelector("a[href*='forgot']");
