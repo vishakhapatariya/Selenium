@@ -12,10 +12,10 @@ public class HomePageObject {
 		this.driver = driver;
 	}
 	
-	By login = By.cssSelector("a[href*='sign_in']");
-	By title = By.xpath("//div[@class='pull-left']/h2");
+	private By login = By.cssSelector("a[href*='sign_in']");
+	private By title = By.xpath("//div[@class='pull-left']/h2");
 	
-	By navbar = By.cssSelector("[class='main-menu']");
+	private By navbar = By.cssSelector("[class='main-menu']");
 	
 	
 	public loginPageObject getlogin() {
