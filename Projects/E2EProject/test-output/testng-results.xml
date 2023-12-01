@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-01T16:43:44 IST" name="Default suite" finished-at="2023-12-01T16:43:44 IST" duration-ms="62">
+  <suite started-at="2023-12-01T18:28:14 IST" name="Default suite" finished-at="2023-12-01T18:28:14 IST" duration-ms="46">
     <groups>
     </groups>
-    <test started-at="2023-12-01T16:43:44 IST" name="Default test" finished-at="2023-12-01T16:43:44 IST" duration-ms="62">
-      <class name="Selenium.E2EProject.ValidateUserLogin">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="initialize" finished-at="2023-12-01T16:43:44 IST" duration-ms="5" status="FAIL">
+    <test started-at="2023-12-01T18:28:14 IST" name="Default test" finished-at="2023-12-01T18:28:14 IST" duration-ms="46">
+      <class name="Selenium.E2EProject.ValidateTitleHome">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@2a39fe6a]" started-at="2023-12-01T18:28:14 IST" name="initialize" finished-at="2023-12-01T18:28:14 IST" duration-ms="8" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:31)
-at Selenium.E2EProject.ValidateUserLogin.initialize(ValidateUserLogin.java:27)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Selenium.E2EProject.ValidateTitleHome.initialize(ValidateTitleHome.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -24,17 +24,9 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvoca
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -54,32 +46,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-12-01T16:43:44 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricteduser@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restricted User]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="validHeader()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@2a39fe6a]" started-at="2023-12-01T18:28:14 IST" name="validHeader" finished-at="2023-12-01T18:28:14 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:31)
-at Selenium.E2EProject.ValidateUserLogin.initialize(ValidateUserLogin.java:27)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Selenium.E2EProject.ValidateTitleHome.initialize(ValidateTitleHome.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,17 +63,9 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvoca
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -117,41 +84,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="tearDown" finished-at="2023-12-01T16:43:44 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="initialize" finished-at="2023-12-01T16:43:44 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="basePageNavigation(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="basePageNavigation" data-provider="getData" finished-at="2023-12-01T16:43:44 IST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricteduser@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1234567]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non Restricted User]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- validHeader -->
+        <test-method signature="validTitle()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@2a39fe6a]" started-at="2023-12-01T18:28:14 IST" name="validTitle" finished-at="2023-12-01T18:28:14 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+              <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:31)
-at Selenium.E2EProject.ValidateUserLogin.initialize(ValidateUserLogin.java:27)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Selenium.E2EProject.ValidateTitleHome.initialize(ValidateTitleHome.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,17 +102,9 @@ at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvoca
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:663)
+at org.testng.TestRunner.beforeRun(TestRunner.java:652)
+at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
@@ -189,12 +123,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- basePageNavigation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateUserLogin@68d6972f]" started-at="2023-12-01T16:43:44 IST" name="tearDown" finished-at="2023-12-01T16:43:44 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- validTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Selenium.E2EProject.ValidateTitleHome@2a39fe6a]" started-at="2023-12-01T18:28:14 IST" name="tearDown" finished-at="2023-12-01T18:28:14 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
+      </class> <!-- Selenium.E2EProject.ValidateTitleHome -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,5 +1,5 @@
-17:04:32.672 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
-17:04:32.754 [TestNG-tests-2] INFO  Selenium.E2EProject.ValidateNavigationbar - Navbar is displayed Successfully
-17:04:32.780 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Navigated to homepage
-17:04:32.868 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Successfully validated title
-17:04:39.281 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
+18:40:51.545 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
+18:40:51.627 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Successfully validated title
+18:40:57.816 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Restricted User user is logging.
+18:40:58.408 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
+18:41:00.319 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
