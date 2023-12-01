@@ -12,10 +12,10 @@ public class HomePageObject {
 		this.driver = driver;
 	}
 	
-	By login = By.cssSelector("a[href*='sign_in']");
-	By title = By.xpath("//div[@class='pull-left']/h2");
-	
-	By navbar = By.cssSelector("[class='main-menu']");
+	private By login = By.cssSelector("a[href*='sign_in']");
+	private By title = By.xpath("//div[@class='pull-left']/h2");
+	private By header = By.cssSelector("div[class*='col-md-6'] h2 span");
+	private By navbar = By.cssSelector("[class='main-menu']");
 	
 	
 	public loginPageObject getlogin() {
@@ -30,6 +30,10 @@ public class HomePageObject {
 
 	public WebElement getNavbar() {
 		return driver.findElement(navbar);
+	}
+	
+	public WebElement getHeader() {
+		return driver.findElement(header);
 	}
 
 }

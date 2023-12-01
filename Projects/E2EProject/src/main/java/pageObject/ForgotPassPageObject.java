@@ -12,8 +12,8 @@ public class ForgotPassPageObject {
 		this .driver = driver;
 	}
 	
-	By email = By.id("email");
-	By button = By.name("commit");
+	private By email = By.id("email");
+	private By button = By.name("commit");
 	
 	public WebElement getEmail() {
 		return driver.findElement(email);

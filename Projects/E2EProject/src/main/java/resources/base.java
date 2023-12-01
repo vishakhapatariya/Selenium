@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class base {
 	
@@ -20,15 +21,23 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 	
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")) {
-			// Invoke chrome browser
-			System.setProperty("webdriver.chrome.driver", "/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/chrome_driver/chromedriver-linux64/chromedriver");
-			driver = new ChromeDriver();
+		// mvn test -Dbrowser=chrome
+		String browserName = System.getProperty("browser");
+//		String browserName = prop.getProperty("browser");
+		
+		if(browserName.contains("chrome")) {
+			// Invoke chrome browser                   
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chome_driver/chromedriver-linux64/chromedriver");
+			
+			ChromeOptions options = new ChromeOptions();
+			if(browserName.contains("headless")) {
+				options.addArguments("--headless=new");
+			}
+			driver = new ChromeDriver(options);
 		}
 		else if(browserName.equals("firefox")) {
 			// Invoke firefox browser

@@ -1,2 +1,1 @@
-19:40:43.275 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
-19:40:48.663 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
+18:41:06.678 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
