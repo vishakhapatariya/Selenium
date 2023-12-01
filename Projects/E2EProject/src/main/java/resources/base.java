@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class base {
 	
@@ -28,11 +29,15 @@ public class base {
 		String browserName = System.getProperty("browser");
 //		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")) {
+		if(browserName.contains("chrome")) {
 			// Invoke chrome browser                   
-			
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chome_driver/chromedriver-linux64/chromedriver");
-			driver = new ChromeDriver();
+			
+			ChromeOptions options = new ChromeOptions();
+			if(browserName.contains("headless")) {
+				options.addArguments("--headless=new");
+			}
+			driver = new ChromeDriver(options);
 		}
 		else if(browserName.equals("firefox")) {
 			// Invoke firefox browser
