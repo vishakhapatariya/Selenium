@@ -4,10 +4,22 @@
   <listeners>
     <listener class-name="Selenium.E2EProject.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="Validating Navigationbar in HomePage(failed)">
+    <classes>
+      <class name="Selenium.E2EProject.ValidateNavigationbar">
+        <methods>
+          <include name="initialize"/>
+          <include name="validNavbar"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
+    </classes>
+  </test> <!-- Validating Navigationbar in HomePage(failed) -->
   <test thread-count="5" parallel="tests" name="Validating title in HomePage(failed)">
     <classes>
       <class name="Selenium.E2EProject.ValidateTitleHome">
         <methods>
+          <include name="validHeader"/>
           <include name="validTitle"/>
           <include name="initialize"/>
           <include name="tearDown"/>
@@ -26,15 +38,4 @@
       </class> <!-- Selenium.E2EProject.ValidateUserLogin -->
     </classes>
   </test> <!-- Validating Login Functionality(failed) -->
-  <test thread-count="5" parallel="tests" name="Validating Navigationbar in HomePage(failed)">
-    <classes>
-      <class name="Selenium.E2EProject.ValidateNavigationbar">
-        <methods>
-          <include name="validNavbar"/>
-          <include name="initialize"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- Selenium.E2EProject.ValidateNavigationbar -->
-    </classes>
-  </test> <!-- Validating Navigationbar in HomePage(failed) -->
 </suite> <!-- Failed suite [Suite] -->
