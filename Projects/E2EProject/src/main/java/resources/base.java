@@ -12,6 +12,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class base {
 	
@@ -31,7 +33,7 @@ public class base {
 		
 		if(browserName.contains("chrome")) {
 			// Invoke chrome browser                   
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chome_driver/chromedriver-linux64/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver-linux64/chromedriver");
 			
 			ChromeOptions options = new ChromeOptions();
 			if(browserName.contains("headless")) {
@@ -40,7 +42,14 @@ public class base {
 			driver = new ChromeDriver(options);
 		}
 		else if(browserName.equals("firefox")) {
-			// Invoke firefox browser
+			// Invoke firefox browser                                                     
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/drivers/geckodriver-v0.33.0-linux64/geckodriver");
+			
+			FirefoxOptions options = new FirefoxOptions();
+			if(browserName.contains("headless")) {
+				options.addArguments("--headless=new");
+			}
+			driver = new FirefoxDriver(options);
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
