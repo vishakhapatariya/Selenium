@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Web Automation Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 4, 2023 11:13:05 am</span></a>
+<a href="#"><span class="badge badge-primary">Dec 6, 2023 12:19:04 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,6 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
@@ -80,40 +79,94 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validNavbar</p>
             <p class="text-sm">
-              <span>11:13:12 am</span> / <span>00:00:00:236</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:19:08 pm</span> / <span>00:00:10:235</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validNavbar</h5>
-<span class='badge badge-success'>12.04.2023 11:13:12 am</span>
-<span class='badge badge-danger'>12.04.2023 11:13:12 am</span>
-<span class='badge badge-default'>00:00:00:236</span>
+<h5 class="test-status text-fail">validNavbar</h5>
+<span class='badge badge-success'>12.06.2023 12:19:08 pm</span>
+<span class='badge badge-danger'>12.06.2023 12:19:18 pm</span>
+<span class='badge badge-default'>00:00:10:235</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validNavbar' src="/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validNavbar">
+    <div class="title">validNavbar</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:13:12 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:19:18 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[class='main-menu']"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3d967d5a43337250e2d2ca80d687e64, findElement {using=css selector, value=[class='main-menu']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:40361}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:40361/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3d967d5a43337250e2d2ca80d687e64
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pageObject.HomePageObject.getNavbar(HomePageObject.java:32)
+	at Selenium.E2EProject.ValidateNavigationbar.validNavbar(ValidateNavigationbar.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -121,40 +174,94 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">validHeader</p>
             <p class="text-sm">
-              <span>11:13:12 am</span> / <span>00:00:00:153</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:19:08 pm</span> / <span>00:00:10:197</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validHeader</h5>
-<span class='badge badge-success'>12.04.2023 11:13:12 am</span>
-<span class='badge badge-danger'>12.04.2023 11:13:13 am</span>
-<span class='badge badge-default'>00:00:00:153</span>
+<h5 class="test-status text-fail">validHeader</h5>
+<span class='badge badge-success'>12.06.2023 12:19:08 pm</span>
+<span class='badge badge-danger'>12.06.2023 12:19:18 pm</span>
+<span class='badge badge-default'>00:00:10:197</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validHeader' src="/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validHeader">
+    <div class="title">validHeader</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:13:13 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:19:18 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[class*='col-md-6'] h2 span"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3cb2cf39f1362215ca4aaccf81d8ab8, findElement {using=css selector, value=div[class*='col-md-6'] h2 span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43675}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43675/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3cb2cf39f1362215ca4aaccf81d8ab8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pageObject.HomePageObject.getHeader(HomePageObject.java:36)
+	at Selenium.E2EProject.ValidateTitleHome.validHeader(ValidateTitleHome.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -162,40 +269,94 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="3"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">validTitle</p>
+            <p class="name">basePageNavigation</p>
             <p class="text-sm">
-              <span>11:13:13 am</span> / <span>00:00:00:087</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>12:19:08 pm</span> / <span>00:00:05:177</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">validTitle</h5>
-<span class='badge badge-success'>12.04.2023 11:13:13 am</span>
-<span class='badge badge-danger'>12.04.2023 11:13:13 am</span>
-<span class='badge badge-default'>00:00:00:087</span>
+<h5 class="test-status text-fail">basePageNavigation</h5>
+<span class='badge badge-success'>12.06.2023 12:19:08 pm</span>
+<span class='badge badge-danger'>12.06.2023 12:19:13 pm</span>
+<span class='badge badge-default'>00:00:05:177</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/basePageNavigation' src="/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/basePageNavigation">
+    <div class="title">basePageNavigation</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>11:13:13 am</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>12:19:13 pm</td>
         <td>
-          Test Passed
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href*='sign_in']"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28c52a984427c8499cf967232e6cdddd, findElement {using=css selector, value=a[href*='sign_in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39301}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39301/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 28c52a984427c8499cf967232e6cdddd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pageObject.HomePageObject.getlogin(HomePageObject.java:22)
+	at Selenium.E2EProject.ValidateUserLogin.basePageNavigation(ValidateUserLogin.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</textarea>
+          
         </td>
       </tr>
   </tbody>
@@ -210,7 +371,7 @@
           <div class="test-detail">
             <p class="name">basePageNavigation</p>
             <p class="text-sm">
-              <span>11:13:13 am</span> / <span>00:00:00:650</span>
+              <span>12:19:15 pm</span> / <span>00:00:05:093</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -219,9 +380,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">basePageNavigation</h5>
-<span class='badge badge-success'>12.04.2023 11:13:13 am</span>
-<span class='badge badge-danger'>12.04.2023 11:13:14 am</span>
-<span class='badge badge-default'>00:00:00:650</span>
+<span class='badge badge-success'>12.06.2023 12:19:15 pm</span>
+<span class='badge badge-danger'>12.06.2023 12:19:20 pm</span>
+<span class='badge badge-default'>00:00:05:093</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -238,16 +399,17 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>11:13:13 am</td>
+        <td>12:19:20 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <a class="theme-btn register-btn" href="https://courses.rahulshettyacademy.com/sign_in"> is not clickable at point (1172,27) because another element <div class="preloader"> obscures it
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href*='sign_in']"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [7d2d8917-564d-4502-99b0-143589cb9f29, clickElement {id=bb705235-27b0-4036-8aaf-fe0fa3537407}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:2313, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 5.4.0-150-generic, moz:processID: 13380, moz:profile: /tmp/rust_mozprofileyHyEvi, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://127.0.0.1:2313/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on linux (7d2d8917-564d-4502-99b0-143589cb9f29)] -> css selector: a[href*='sign_in']]
-Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [32b37b70b996d6333e158c7dac1da82d, findElement {using=css selector, value=a[href*='sign_in']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36141}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36141/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 32b37b70b996d6333e158c7dac1da82d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -260,8 +422,10 @@ Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
 	at pageObject.HomePageObject.getlogin(HomePageObject.java:22)
 	at Selenium.E2EProject.ValidateUserLogin.basePageNavigation(ValidateUserLogin.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -300,9 +464,9 @@ Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">basePageNavigation</p>
+            <p class="name">validTitle</p>
             <p class="text-sm">
-              <span>11:13:18 am</span> / <span>00:00:00:239</span>
+              <span>12:19:18 pm</span> / <span>00:00:10:118</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -310,10 +474,10 @@ Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">basePageNavigation</h5>
-<span class='badge badge-success'>12.04.2023 11:13:18 am</span>
-<span class='badge badge-danger'>12.04.2023 11:13:19 am</span>
-<span class='badge badge-default'>00:00:00:239</span>
+<h5 class="test-status text-fail">validTitle</h5>
+<span class='badge badge-success'>12.06.2023 12:19:18 pm</span>
+<span class='badge badge-danger'>12.06.2023 12:19:28 pm</span>
+<span class='badge badge-default'>00:00:10:118</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -321,8 +485,8 @@ Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/basePageNavigation' src="/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/basePageNavigation">
-    <div class="title">basePageNavigation</div>
+<img data-featherlight='/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validTitle' src="/home/pp-8/Desktop/vishakha/Selenium_Training/Selenium/Projects/E2EProject/reports/validTitle">
+    <div class="title">validTitle</div>
     </div></div>
 <div class="detail-body mt-4">
 <table class="table table-sm">
@@ -330,16 +494,17 @@ Session ID: 7d2d8917-564d-4502-99b0-143589cb9f29
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>11:13:19 am</td>
+        <td>12:19:28 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.ElementClickInterceptedException: Element <a class="theme-btn register-btn" href="https://courses.rahulshettyacademy.com/sign_in"> is not clickable at point (1172,27) because another element <div class="preloader"> obscures it
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pull-left']/h2"}
+  (Session info: chrome=119.0.6045.159)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.15.0', revision: '1d14b5521b'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [bddca86b-4523-44e4-b70a-44d8e42a787e, clickElement {id=6ec9481a-b36c-432b-b49f-76eaa68ec3b9}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 113.0.2, moz:accessibilityChecks: false, moz:buildID: 20230522134052, moz:debuggerAddress: 127.0.0.1:1173, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 5.4.0-150-generic, moz:processID: 14381, moz:profile: /tmp/rust_mozprofileLtNnHA, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://127.0.0.1:1173/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on linux (bddca86b-4523-44e4-b70a-44d8e42a787e)] -> css selector: a[href*='sign_in']]
-Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.4.0-150-generic', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f3cb2cf39f1362215ca4aaccf81d8ab8, findElement {using=xpath, value=//div[@class='pull-left']/h2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.159, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43675}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43675/devtoo..., se:cdpVersion: 119.0.6045.159, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f3cb2cf39f1362215ca4aaccf81d8ab8
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -352,10 +517,12 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at pageObject.HomePageObject.getlogin(HomePageObject.java:22)
-	at Selenium.E2EProject.ValidateUserLogin.basePageNavigation(ValidateUserLogin.java:41)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at pageObject.HomePageObject.getTitle(HomePageObject.java:28)
+	at Selenium.E2EProject.ValidateTitleHome.validTitle(ValidateTitleHome.java:37)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -407,15 +574,15 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>2</span>
+<span class='badge log badge-danger'>5</span>
 </span>
-<p class="name">org.openqa.selenium.ElementClickInterceptedException</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">5 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.ElementClickInterceptedException</h4>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>5 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -428,16 +595,37 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:13:13 am</td>
+<td>12:19:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>basePageNavigation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:19:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>validHeader</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:19:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>validNavbar</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:19:15 pm</td>
 <td>
 <a href="#" class="linked" test-id='4' id='4'>basePageNavigation</a>
 </td>
 </tr>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>11:13:18 am</td>
+<td>12:19:18 pm</td>
 <td>
-<a href="#" class="linked" test-id='5' id='5'>basePageNavigation</a>
+<a href="#" class="linked" test-id='5' id='5'>validTitle</a>
 </td>
 </tr>
 </tbody>
@@ -457,25 +645,25 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 4, 2023 11:13:05 am</h3>
+<h3>Dec 6, 2023 12:19:04 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 4, 2023 11:13:19 am</h3>
+<h3>Dec 6, 2023 12:19:28 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>3</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>2</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -491,12 +679,12 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'>
-<b>3</b> tests passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='40%'><b>2</b> tests failed,
+<small data-tooltip='100%'><b>5</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -514,9 +702,9 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='60%'><b>3</b> events passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
 <div>
-<small data-tooltip='40%'><b>2</b> events failed,
+<small data-tooltip='100%'><b>5</b> events failed,
 <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -533,7 +721,7 @@ Session ID: bddca86b-4523-44e4-b70a-44d8e42a787e
 </div></div>
 <script>
 var timeline = {
-"validNavbar":0.236,"validHeader":0.153,"validTitle":0.087,"basePageNavigation":0.65,"basePageNavigation":0.239
+"validNavbar":10.235,"validHeader":10.197,"basePageNavigation":5.177,"basePageNavigation":5.093,"validTitle":10.118
 };
 </script>
 <div class="row">
@@ -556,8 +744,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 2,
+passParent: 0,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -573,8 +761,8 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 3,
-failEvents: 2,
+passEvents: 0,
+failEvents: 5,
 warningEvents: 0,
 skipEvents: 0,
 infoEvents: 0

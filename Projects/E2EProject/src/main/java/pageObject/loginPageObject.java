@@ -19,6 +19,7 @@ public class loginPageObject {
 	
 	
 	public WebElement getEmail() {
+		
 		return driver.findElement(emailText);
 	}
 	
