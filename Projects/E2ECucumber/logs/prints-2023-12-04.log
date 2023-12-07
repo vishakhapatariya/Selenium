@@ -1,0 +1,5 @@
+11:13:12.610 [TestNG-tests-2] INFO  Selenium.E2EProject.ValidateNavigationbar - Navigated to homepage
+11:13:12.914 [TestNG-tests-2] INFO  Selenium.E2EProject.ValidateNavigationbar - Navbar is displayed Successfully
+11:13:12.973 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Navigated to homepage
+11:13:13.248 [TestNG-tests-3] INFO  Selenium.E2EProject.ValidateTitleHome - Successfully validated title
+11:13:13.431 [TestNG-tests-1] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage

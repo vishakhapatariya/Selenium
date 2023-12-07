@@ -1,0 +1,6 @@
+12:22:55.466 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Restricted User user is logging.
+12:22:55.994 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
+12:22:57.289 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
+12:22:57.505 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Non Restricted User user is logging.
+12:23:14.206 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Driver is initialized
+12:23:15.589 [main] INFO  Selenium.E2EProject.ValidateUserLogin - Navigated to homepage
